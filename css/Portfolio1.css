@@ -1,0 +1,199 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner-container {
+    background-color: #CACACA;
+}
+
+.banner-col {
+    background-color: #8D8D8D;
+}
+
+.banner-container a {
+    text-decoration: none;
+}
+
+.container-about {
+    background-color: #00BDBD;
+}
+
+.imaged {
+    padding: 20px;
+    text-align: center;
+    background: url(/images/28235485-removebg-preview.png)repeat-x center;
+    height: 40px;
+    width: auto;
+}
+
+.ima {
+    border: solid white 4px;
+    vertical-align: top;
+    /* or display:block; + margin:auto;*/
+}
+
+.circle {
+    /* width: 150px;
+    height: 150px;
+    border-radius: 50%; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* background-color: green; */
+}
+
+.external-link {
+    text-decoration: none;
+    color: #3C7BC0;
+}
+
+@media only screen and (max-width:767px) {
+    .hid-sm {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .hid-lg {
+        display: none;
+    }
+}
+
+.container-hl {
+    background-color: #EEEEEE;
+}
+
+.redtype {
+    color: #FB857F;
+}
+
+.no-click {
+    pointer-events: none;
+}
+
+.bg-gray {
+    background-color: #F2F2F2;
+}
+
+.bg-dark-gray {
+    background-color: #808080;
+}
+
+.highlight-tools {
+    margin-top: 50px;
+}
+
+.external-link:hover {
+    text-decoration: underline;
+}
+
+.bg-col {
+    background-color: lightgray;
+}
+
+.bg-col-2 {
+    background-color: #46d1d1;
+}
+
+.container-proj {
+    background-color: #2BB3DD;
+}
+
+.proj-col {
+    background-color: #7dcae2;
+}
+
+.proj-anima:hover {
+    background-color: #037395;
+    color: white;
+}
+
+.bg-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-pub {
+    background-color: cornsilk;
+}
+
+.pub-body-col:hover {
+    background-color: rgb(228, 221, 194);
+}
+
+.pub-head-col:hover {
+    background-color: #d8d6d6;
+}
+
+.container-blog {
+    background-color: cadetblue;
+}
+
+.blog-anim:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+.blog-card {
+    background-color: rgb(127, 192, 194);
+}
+
+.container-contact {
+    background-color: lightgray;
+}
+
+.info-box {
+    background-color: rgb(185, 184, 184);
+}
+
+.social-links a {
+    color: dimgray;
+    font-size: 5vh;
+    padding: 1.5vh;
+}
+
+.info-box:hover {
+    /* background-color: darkslategray; */
+    background-color: #212529;
+    color: white;
+}
+
+.social-links a:hover {
+    color: white;
+    font-size: 4vh;
+    /* padding: 3vh; */
+}
+
+.sm-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: dimgray;
+}
+
+.container-email {
+    background-color: rgb(185, 184, 184);
+}
+
+.mail-me div div div input {
+    background-color: lightgray;
+}
+
+#msg-body {
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-space {
+        margin-bottom: 25px;
+    }
+}
+
+.whisper {
+    background-color: lightgray;
+}
