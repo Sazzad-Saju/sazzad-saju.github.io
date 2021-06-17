@@ -69,7 +69,7 @@ body {
 
 .external-link {
     text-decoration: none;
-    color: #3C7BC0;
+    color: #12467e;
 }
 
 @media only screen and (max-width:767px) {
@@ -112,8 +112,27 @@ body {
     text-decoration: underline;
 }
 
+.bg-col-more {
+    background-color: #d6d1d1;
+    color: #45a045;
+}
+
+.bg-col-more:hover {
+    background-color: #FB857F;
+    color: white;
+    border: 3px solid white;
+}
+
 .bg-col {
-    background-color: lightgray;
+    background-color: #d6d1d1;
+    color: black;
+}
+
+.bg-col:hover {
+    background-color: #FB857F;
+    color: white;
+    border: 3px solid white;
+    outline: 2px solid #fb857f;
 }
 
 .bg-col-2 {
@@ -169,12 +188,12 @@ body {
     background-color: cornsilk;
 }
 
-.pub-body-col:hover {
+.publ-card {
     background-color: rgb(228, 221, 194);
 }
 
-.pub-head-col:hover {
-    background-color: #d8d6d6;
+.publ-card:hover {
+    background-color: rgba(240, 237, 229, 0.911);
 }
 
 .container-blog {
