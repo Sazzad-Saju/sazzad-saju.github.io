@@ -2,12 +2,37 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.banner-container {
-    background-color: #CACACA;
+.cov-img {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 1366px;
+    height: 768px;
+    opacity: 0.7;
 }
 
-.banner-col {
+.web-contant {
+    position: relative;
+}
+
+
+/* .banner-container {
+    background-color: #CACACA;
+} */
+
+
+/* .banner-col {
     background-color: #8D8D8D;
+} */
+
+.banner-col {
+    background-color: lightgreen;
+    color: darkslategray;
+}
+
+.banner-col:hover {
+    background-color: darkgreen;
+    color: white;
 }
 
 .banner-container a {
@@ -93,6 +118,28 @@ body {
 
 .bg-col-2 {
     background-color: #46d1d1;
+    color: white;
+}
+
+.bg-col-2:hover {
+    background-color: #7ae7e7;
+    color: black;
+}
+
+.about-cards {
+    background-color: #7ae7e7;
+}
+
+.about-cards:hover {
+    background-color: #c0f8f8;
+}
+
+.img-opacity {
+    opacity: 0.5;
+}
+
+.img-opacity:hover {
+    opacity: 1;
 }
 
 .container-proj {
