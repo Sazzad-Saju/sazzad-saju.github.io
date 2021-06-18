@@ -50,6 +50,35 @@ function minus() {
 
 }
 
+//blockquote
+var countquote = 0;
+
+function changequote() {
+    countquote = countquote + 1;
+    if (countquote % 4 == 0) {
+        var bqh = document.getElementById("bqhead");
+        bqh.innerHTML = "<q> Do not go gentle into that good night, Old age should burn and rave at close of day; Rage, rage against the dying of the light.</q>"
+        var bqf = document.getElementById("bqfoot");
+        bqf.innerHTML = "Dylan Thomas 1914-1953";
+    } else if (countquote % 4 == 1) {
+        var bqh = document.getElementById("bqhead");
+        bqh.innerHTML = "<q>Change is the end result of all true learning.</q>"
+        var bqf = document.getElementById("bqfoot");
+        bqf.innerHTML = "Dr. Leo Buscaglia PROFESSOR, AUTHOR";
+    } else if (countquote % 4 == 2) {
+        var bqh = document.getElementById("bqhead");
+        bqh.innerHTML = "<q>প্রথমে যেটি একটি উদ্দেশ্যের উপায় মাত্র থাকে, মানুষে ক্রমে সেই উপায়টিকে উদ্দেশ্য করিয়া তুলে।</q>"
+        var bqf = document.getElementById("bqfoot");
+        bqf.innerHTML = "রবীন্দ্রনাথ ঠাকুর";
+    } else {
+        var bqh = document.getElementById("bqhead");
+        bqh.innerHTML = "وَلَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ <br> <q>If you are greatful, I will surely increase you [in favor]</q>"
+        var bqf = document.getElementById("bqfoot");
+        bqf.innerHTML = "Surah Ibrahim 14:7";
+    }
+
+}
+
 // PostMail: mail form website 
 //update this with your js_form selector
 var form_id_js = "javascript_form";
