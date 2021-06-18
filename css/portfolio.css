@@ -2,6 +2,9 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* background-img */
+
 .cov-img {
     position: fixed;
     left: 0;
@@ -16,14 +19,7 @@ body {
 }
 
 
-/* .banner-container {
-    background-color: #CACACA;
-} */
-
-
-/* .banner-col {
-    background-color: #8D8D8D;
-} */
+/* banner  */
 
 .banner-col {
     background-color: lightgreen;
@@ -39,22 +35,11 @@ body {
     text-decoration: none;
 }
 
+
+/* About me section */
+
 .container-about {
     background-color: #00BDBD;
-}
-
-.imaged {
-    padding: 20px;
-    text-align: center;
-    background: url(/images/28235485-removebg-preview.png)repeat-x center;
-    height: 40px;
-    width: auto;
-}
-
-.ima {
-    border: solid white 4px;
-    vertical-align: top;
-    /* or display:block; + margin:auto;*/
 }
 
 .circle {
@@ -72,6 +57,10 @@ body {
     color: #12467e;
 }
 
+.external-link:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width:767px) {
     .hid-sm {
         display: none;
@@ -84,32 +73,33 @@ body {
     }
 }
 
+.bg-col-2 {
+    background-color: #46d1d1;
+    color: white;
+}
+
+.bg-col-2:hover {
+    background-color: #7ae7e7;
+    color: black;
+}
+
+.about-cards {
+    background-color: #7ae7e7;
+}
+
+.about-cards:hover {
+    background-color: #c0f8f8;
+}
+
+
+/* highlight section */
+
 .container-hl {
     background-color: #EEEEEE;
 }
 
 .redtype {
     color: #FB857F;
-}
-
-.no-click {
-    pointer-events: none;
-}
-
-.bg-gray {
-    background-color: #F2F2F2;
-}
-
-.bg-dark-gray {
-    background-color: #808080;
-}
-
-.highlight-tools {
-    margin-top: 50px;
-}
-
-.external-link:hover {
-    text-decoration: underline;
 }
 
 .bg-col-more {
@@ -135,31 +125,8 @@ body {
     outline: 2px solid #fb857f;
 }
 
-.bg-col-2 {
-    background-color: #46d1d1;
-    color: white;
-}
 
-.bg-col-2:hover {
-    background-color: #7ae7e7;
-    color: black;
-}
-
-.about-cards {
-    background-color: #7ae7e7;
-}
-
-.about-cards:hover {
-    background-color: #c0f8f8;
-}
-
-.img-opacity {
-    opacity: 0.5;
-}
-
-.img-opacity:hover {
-    opacity: 1;
-}
+/* project section  */
 
 .container-proj {
     background-color: #2BB3DD;
@@ -174,15 +141,8 @@ body {
     color: white;
 }
 
-.bg-img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-}
+
+/* publications section  */
 
 .container-pub {
     background-color: cornsilk;
@@ -196,6 +156,9 @@ body {
     background-color: rgba(240, 237, 229, 0.911);
 }
 
+
+/* myblog section  */
+
 .container-blog {
     background-color: cadetblue;
 }
@@ -208,6 +171,9 @@ body {
 .blog-card {
     background-color: rgb(127, 192, 194);
 }
+
+
+/* contact section  */
 
 .container-contact {
     background-color: lightgray;
@@ -270,3 +236,59 @@ body {
 .whisper {
     background-color: lightgray;
 }
+
+
+/* deleted css */
+
+
+/* .imaged {
+    padding: 20px;
+    text-align: center;
+    background: url(/images/28235485-removebg-preview.png)repeat-x center;
+    height: 40px;
+    width: auto;
+} */
+
+
+/* .ima {
+    border: solid white 4px;
+    vertical-align: top;
+}  */
+
+
+/* .no-click {
+    pointer-events: none;
+}
+
+.bg-gray {
+    background-color: #F2F2F2;
+}
+
+.bg-dark-gray {
+    background-color: #808080;
+} */
+
+
+/* .highlight-tools {
+    margin-top: 50px;
+} */
+
+
+/* .img-opacity {
+    opacity: 0.5;
+}
+
+.img-opacity:hover {
+    opacity: 1;
+} */
+
+
+/* .bg-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+} */

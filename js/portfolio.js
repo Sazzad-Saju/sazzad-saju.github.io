@@ -1,4 +1,4 @@
-// certifications
+// Highlight_sec: certifications
 function moreCert() {
     var fh = document.getElementById("more-cert");
     if (fh.innerHTML == "<b>(+3) More</b>") {
@@ -8,7 +8,7 @@ function moreCert() {
     }
 }
 
-// proj-data-destroyed EpicToast
+// Project_sec: proj-data-destroyed EpicToast
 var option = {
     animation: true,
     delay: 3000
@@ -20,7 +20,7 @@ function Toasty() {
     toastElement.show();
 }
 
-// more proj 
+// Proj_sec: more proj 
 function changeProj() {
     var fh = document.getElementById("switchProj");
     if (fh.innerHTML == "<b>(+5) More</b>") {
@@ -30,7 +30,7 @@ function changeProj() {
     }
 }
 
-// more blog
+// Myblog_sec: more blog
 function change() {
     var fh = document.getElementById("OpenBlog");
     if (fh.innerHTML == "<b>(+5) More</b>") {
@@ -40,7 +40,7 @@ function change() {
     }
 }
 
-// more social points 
+// Contact_sec:  more social points 
 function minus() {
     if (document.getElementById("SocialPlus").className == "fas fa-plus-circle") {
         document.getElementById("SocialPlus").className = "fas fa-minus-circle";
@@ -50,7 +50,7 @@ function minus() {
 
 }
 
-//blockquote
+//Contact_sec: blockquote
 var countquote = 0;
 
 function changequote() {
@@ -76,11 +76,9 @@ function changequote() {
         var bqf = document.getElementById("bqfoot");
         bqf.innerHTML = "Surah Ibrahim 14:7";
     }
-
 }
 
-// PostMail: mail form website 
-//update this with your js_form selector
+//Contact_sec: PostMail: mail form website 
 var form_id_js = "javascript_form";
 
 var data_js = {
@@ -88,12 +86,10 @@ var data_js = {
 };
 
 function js_onSuccess() {
-    // remove this to avoid redirect
     window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
 }
 
 function js_onError(error) {
-    // remove this to avoid redirect
     window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
 }
 
@@ -143,7 +139,7 @@ js_form.addEventListener("submit", function(e) {
 });
 
 
-// send anonymous mail 
+//Contact_sec: send anonymous mail 
 var nm;
 var temp1;
 var em;
