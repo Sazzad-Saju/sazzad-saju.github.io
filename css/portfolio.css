@@ -292,3 +292,12 @@ body {
     background-size: cover;
     background-position: center;
 } */
+ 
+.custom-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the text color from the parent */
+}
+
+.custom-link:hover {
+    color: #ff6600;
+}

@@ -1,0 +1,60 @@
+.scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 15s linear infinite;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.upwork-link {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/upwork.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.social-links:hover .upwork-link {
+    background-image: url('../images/upwork_gray.svg');
+}
+
+.upwork-link:hover {
+    transform: scale(0.8);
+    background-image: url('../images/upwork_gray.svg');
+}
+
+.academia-link{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/academia.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.social-links:hover .academia-link {
+    background-image: url('../images/academia-gray.png');
+}
+
+.academia-link:hover {
+    transform: scale(0.8);
+}
