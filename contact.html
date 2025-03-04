@@ -14,19 +14,24 @@
     <link rel="shortcut icon" type="image/png" href="images/28235485-removebg-preview.png">
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/4cd2a78d9b.js" crossorigin="anonymous"></script>
+    <!-- Animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
 </head>
 
 <body>
     <div class="web-contant">
         <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top" style="opacity: .8;">
             <div class="container-fluid">
-                <a href="#" class="mx-4">
+                <a href="#" class="mx-4 site-logo">
                     <img src="/images/28235485-removebg-preview.png" height="30px" width="auto" alt="">
                 </a>
-                <button data-bs-toggle="collapse" data-bs-target="#nav-colps" class="navbar-toggler">
+                <!-- <button data-bs-toggle="collapse" data-bs-target="#nav-colps" class="navbar-toggler">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse bg-dark" id="nav-colps">
+                </button> -->
+                <div class="navbar-collapse collapse bg-dark show" id="nav-colps">
                     <div class="scrolling-text-container">
                         <ul class="navbar-nav m-auto">
                             <li class="scrolling-text">
@@ -75,13 +80,12 @@
                                     class="btn" target="_blank"><i class="fab fa-researchgate"></i></a>
                                 <a href="https://stackoverflow.com/users/10682584/sazzad" class="btn" target="_blank"><i
                                         class="fab fa-stack-overflow"></i></a>
-                                <a href="https://soundcloud.com/sazzad-saju-816190530" class="btn" target="_blank"><i
-                                        class="fab fa-soundcloud"></i></a>
                                 <a href="#" class="btn" data-bs-toggle="collapse" data-bs-target="#more-connect"
                                     target="_blank"><i class="fas fa-plus-circle" id="SocialPlus"
                                         onclick="minus()"></i></a> <br>
                                 <span class="collapse" id="more-connect">
-
+                                    <a href="https://soundcloud.com/sazzad-saju-816190530" class="btn"
+                                        target="_blank"><i class="fab fa-soundcloud"></i></a>
                                     <a href="https://twitter.com/SazzadSaju6" class="btn"><i class="fab fa-twitter"
                                             target="_blank"></i></a>
                                     <a href="https://www.facebook.com/sazzad.saju.001/" class="btn" target="_blank"><i
@@ -111,26 +115,34 @@
                         <div class="col-md-5 rounded proj-col mt-4 mx-auto text-center info-box p-3">
                             <p class="sm-circle mx-auto p-2"><i class="fas fa-envelope fs-3 "></i></p>
                             <h4 class="fw-bold fs-3">Email</h4>
-                            <p class="fs-5">sazzadsa****@gmail.com</p>
+                            <p class="fs-5">saju.cse.hstu@gmail.com</p>
                         </div>
                         <div class="col-md-5 rounded proj-col mt-4 mx-auto text-center info-box p-3">
                             <p class="sm-circle mx-auto p-2"><i class="fas fa-phone-volume fs-3 "></i></p>
                             <h4 class="fw-bold fs-3">Phone</h4>
-                            <p class="fs-5">+880176660****</p>
+                            <p class="fs-5">+8801766601932</p>
                         </div>
                     </div>
                 </div>
                 <div class=" align-items-center">
                     <form id="javascript_form" class="mail-me">
                         <div class="container container-email mt-5 py-2 mx-auto">
-                            <div class="row p-4">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control-plaintext px-2 mobile-space"
-                                        placeholder="Your Name" maxlength="20" id="urname" name="client">
+                            <div class="text-center pt-3">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <span>Text me now!</span>
+                                        </div>
+                                        <div class="back">
+                                            <span>Let's Connect!</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control-plaintext px-2" maxlength="50"
-                                        name="reply_to" placeholder="Your Email" id="uremail" />
+                            </div>
+                            <div class="row p-4">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control-plaintext px-2 mobile-space"
+                                        placeholder="Anonymous Name (optional)" maxlength="20" id="name" name="name">
                                 </div>
                             </div>
                             <div class="row">
@@ -149,7 +161,7 @@
                             <div class="row ">
                                 <div class="col text-center">
                                     <div class="mt-4">
-                                        <input type="checkbox" class="form-check-input btn" onclick="hidename()">
+                                        <input type="checkbox" class="form-check-input btn" checked>
                                         <label class="align-middle ps-2" for="">Send Anonymous</label>
                                     </div>
                                     <input id="js_send" type="submit" value="Whisper"
@@ -174,10 +186,60 @@
             </figure>
             <br>
         </div>
+
+        <!-- connecting divisions -->
+        <div class="container-contact container-fluid text-center" data-wow-duration="1s">
+            <img src="/images/top.png" alt="" height="50px" width="auto">
+        </div>
+        <div class="container-footer container-fluid text-center" data-wow-duration="1s">
+            <img src="/images/down.png" alt="" height="50px" width="auto">
+        </div>
+
+        <!-- Footer -->
+        <footer class="py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <p class="headline p-2 wow animate__ animate__backInRight animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: backInRight;">
+                       Have more interest? Follow links below!
+                      </p>
+                    <div class="col-md-12 social text-center">
+                        <a href="#">
+                            <span> HOME </span>
+                        </a>
+                        <a href="#">
+                            <span> ABOUT ME </span>
+                        </a>
+                        <a href="#">
+                            <span> SKILLS </span>
+                        </a>
+                        <a href="#">
+                            <span> PROJECTS </span>
+                        </a>
+                        <a href="#">
+                            <span> MY BLOGS </span>
+                        </a>
+                        <a href="#">
+                            <span> MORE </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12 info">
+                    <p class="text-center wow animate__ animate__backInLeft animated" style="visibility: visible; animation-duration: 1s; animation-name: backInLeft;"
+                    data-wow-duration="1s">
+                        <span class="author"> SAZZAD SAJU</span>
+                        <span class="copyright">&copy;<span id="year"></span> </span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
     </div>
-    
+
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- WOW JS Animation -->
+    <script src="js/wow.min.js"></script>
 </body>
 
 </html>
