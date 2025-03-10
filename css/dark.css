@@ -582,6 +582,14 @@ input:focus{
     font-weight: 500;
 }
 
+.container-resume{
+    background-color: #212529;
+}
+
+.container-service{
+    background-color: #131419;
+}
+
 /* 5. Service */
 
 .service-area{
@@ -641,7 +649,26 @@ input:focus{
     padding: 16px;
 }
 
+.container-portfolio{
+    background-color: #212529;
+}
+
 /* 6. portfolio */
+.mb-36{
+    margin-bottom: 36px;
+}
+.custom-btn{
+    background: transparent;
+    box-shadow: #000000 5px 5px 15px, #4d4d4d -5px -5px 15px;
+    padding: 10px 24px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 0;
+    border-radius: 3px;
+    color: #fff;
+    border-radius: 5px;
+}
 .portfolio-head-title h1 {
     color: #fff;
     font-weight: 600;
