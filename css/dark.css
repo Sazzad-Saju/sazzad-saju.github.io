@@ -553,6 +553,13 @@ input:focus{
     padding: 30px;
     box-shadow: #000000 2px 2px 6px, #4d4d4d -2px -2px 6px;
     border-radius: 15px;
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+
+.single-resume:hover {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .pb-82{
@@ -627,6 +634,12 @@ input:focus{
     border-radius: 20px;
     margin-bottom: 30px;
     box-shadow: #262525 2px 2px 4px, #000000 -2px -2px 6px;
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+.single-service:hover {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 .service-img {
     margin: 1.5rem 0;
@@ -768,6 +781,83 @@ input:focus{
     color: #fff;
 }
 
+/* 7. blog */
+
+.blog-area{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.blog-area:before {
+    content: "";
+    background-color: #131419;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+.blog-head-title h1 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.blog-head-title p {
+    font-size: 18px;
+    color: #fff;
+}
+.single-blog {
+    background: #14161b;
+    padding: 20px 7px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: #262525 2px 2px 4px, #000000 -2px -2px 6px;
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+.single-blog:hover {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.blog-img {
+    margin: 1.5rem 0;
+}
+.blog-img img {
+    width: 50%;
+}
+.blog-content h4 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.blog-content p {
+    font-size: 18px;
+    color: #bcbcbc;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+.blog-border {
+    padding: 16px;
+}
+
+.blog-container{
+    margin-left: 80px;
+    margin-right: 80px;    
+}
+
+.container-portfolio{
+    background-color: #212529;
+}
+
+.pb-44{
+    padding-bottom: 44px;
+}
 
 /* 7. Testimonials */
 .owl-carousel .owl-stage {
