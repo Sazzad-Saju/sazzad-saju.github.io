@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/dark.css">
     <link rel="stylesheet" href="css/responsive.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body>
@@ -61,7 +61,8 @@
                                         <li><a href="#service">Service</a></li>
                                         <li><a href="#portfolio">Portfolio</a></li>
                                         <li><a href="#blog">Blog</a></li>
-                                        <li><a href="/contact.html">Contact</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                        <li><a href="#connect">Connect</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -1125,6 +1126,228 @@
         </section>
         <!-- my blog area end -->
         
+        <div class="container-service container-fluid text-center">
+            <img src="/images/top.png" alt="" height="50px" width="auto">
+        </div>
+        <div class="container-portfolio container-fluid text-center">
+            <img src="/images/down.png" alt="" height="50px" width="auto">
+        </div>
+        
+         <!-- contact area start -->
+         <section id="contact">
+            <div class="contact-area pt-100">
+                <div class="contact-head-title text-center mb-40">
+                    <div class="col-lg-6 mx-auto">
+                        <h1>Contact Me</h1>
+
+                        <p class="mb-36">&quot;Get in Touch: I'm here to help! Whether you have a project in mind, need a consultation, or simply want to connect, I'm all ears. And hey—if you have something to say anonymously, just click the <strong>Anonymous</strong> button below. I'm waiting for your thoughts—<strong>text me now</strong>, don't skip it! I built this for you, so why hold back?&quot;</p>
+                        <a href="/contact.html" class="custom-btn mt-30">Send Anonymous Message</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-lg-4">
+                            <div class="text-center">
+                                <div class="single-contact-info">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div class="info mt-3">
+                                        <h5>Call Me</h5>
+
+                                        <p>01766601932</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="text-center">
+                                <div class="single-contact-info">
+                                    <i class="far fa-envelope"></i>
+                                    <div class="info mt-3">
+                                        <h5>Email Us At</h5>
+
+                                        <p>saju.cse.hstu@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="text-center">
+                                <div class="single-contact-info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="info mt-3">
+                                        <h5>Visit Office</h5>
+                                        <p>8, MS Center, Dhaka 1212</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-12">
+                            <p class="contact-msg text-center"></p>
+                            <div class="contact-form">
+                                <form id="contact_form" class="mail-me">
+                                    <input type="hidden" name="_token" value="2PdKVUkiAO4CuCnI51RcEBSmMBnrJW7XbQYboy9O">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" id="name" class="form-control" placeholder="Name*"
+                                                    name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" id="email" class="form-control" placeholder="Email*"
+                                                    name="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <input type="text" id="subject" class="form-control"
+                                                    placeholder=" Subject..*" name="subject">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control" id="msg-body" name="message"
+                                                    placeholder="Message.."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button id="js_send" type="submit" class="btn f-right">Send Message</button>
+                                </form>
+                                <div class="ajax-response"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact area end -->
+        <div class="container-resume container-fluid text-center">
+            <img src="/images/top.png" alt="" height="50px" width="auto">
+        </div>
+        <div class="container-service container-fluid text-center">
+            <img src="/images/down.png" alt="" height="50px" width="auto">
+        </div>
+         <!-- connects area start -->
+         <section id="connect">
+            <div class="testimonials-area pt-100">
+                <div class="contact-head-title text-center mb-40">
+                    <div class="col-lg-6 mx-auto">
+                        <h1>Connect The Peer Pathfinders</h1>
+
+                        <p>&quot;Engage with these exceptional geniuses, including innovative developers and pioneering researchers with strong engineering backgrounds. Their collective brilliance has inspired my journey, and I believe their visionary insights will inspire many more.&quot;</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row owl-carousel">
+                        <div class="col-lg-10 mx-auto pt-20 pb-20">
+                            <div class="testimonials-main-content text-center">
+                                <div class="testi-profile">
+                                    <img class="lazy" src="images/loader.gif"
+                                        data-src="/images/connect/1.jpeg"
+                                        alt="sabbir ahmed">
+                                </div>
+                                <div class="testi-author-name">
+                                    <h4>Sabbir Ahmed</h4>
+                                    <small>Staff Software Engineer @ Optimizely</small>
+                                </div>
+                                <div class="testi-description mt-20">
+                                    <p>SaaS Development • Mobile Application Development • Web Development • Cloud Application Development • Android Development • Application Development • Software Testing • iOS Development • Information Security • Cloud Management</p>
+                                    <div class="hero-social-link">
+
+                                        <a href="https://sabbir.dev/" target="_blank"><i class="fa fa-briefcase"></i></a>
+
+                                        <a href="https://www.linkedin.com/in/tosabbir/" target="_blank"><i
+                                                class="fab fa-linkedin"></i></a>
+
+                                        <a href="https://x.com/sabbirsaid" target="_blank"><i class="fa fa-twitter"></i></a>
+
+                                        <a href="https://github.com/by-sabbir" target="_blank"><i
+                                                class="fab fa-github"></i></a>
+                                                
+                                        <a href="https://github.com/by-sabbir" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 mx-auto pt-20 pb-20">
+                            <div class="testimonials-main-content text-center">
+                                <div class="testi-profile">
+                                    <img class="lazy" src="images/loader.gif"
+                                        data-src="/images/connect/2.webp"
+                                        alt="sabbir ahmed">
+                                </div>
+                                <div class="testi-author-name">
+                                    <h4>Afif Al Mamun</h4>
+                                    <small>Graduate [RT]A, UCalgary | Intern, IBM</small>
+                                </div>
+                                <div class="testi-description mt-20">
+                                    <p>NLP • Software Development • SaaS Applications • System Design • AWS/Azure • CI/CD • React</p>
+                                    <div class="hero-social-link">
+
+                                        <a href="https://afif.me/ " target="_blank"><i class="fa fa-briefcase"></i></a>
+
+                                        <a href="https://www.linkedin.com/in/afifaniks" target="_blank"><i
+                                                class="fab fa-linkedin"></i></a>
+
+                                        <a href="https://x.com/afifaniks" target="_blank"><i class="fa fa-twitter"></i></a>
+
+                                        <a href="https://github.com/afifaniks" target="_blank"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://www.researchgate.net/profile/Md-Afif-Al-Mamun-2" target="_blank"><i class="fab fa-researchgate"></i></a>
+                                        
+                                        <a href="https://orcid.org/0000-0002-9319-3483" target="_blank"><i class="fab fa-orcid"></i></a>
+                                                
+                                        <a href="https://github.com/by-sabbir" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 mx-auto pt-20 pb-20">
+                            <div class="testimonials-main-content text-center">
+                                <div class="testi-profile">
+                                    <img class="lazy" src="images/loader.gif"
+                                        data-src="/images/connect/3.jpeg"
+                                        alt="sabbir ahmed">
+                                </div>
+                                <div class="testi-author-name">
+                                    <h4>Md Jahid Hasan</h4>
+                                    <small>ML@carsales.com.au | Phd@RMIT</small>
+                                </div>
+                                <div class="testi-description mt-20">
+                                    <p>Deep Learning • Computer Vision • Embedded System Design • Python • C • Java • TensorFlow • PyTorch • OpenCV • Raspberry Pi • Arduino</p>
+                                    <div class="hero-social-link">
+
+                                        <a href="https://hellojahid.github.io/" target="_blank"><i class="fa fa-briefcase"></i></a>
+
+                                        <a href="https://www.linkedin.com/in/hellojahid/" target="_blank"><i
+                                                class="fab fa-linkedin"></i></a>
+
+                                        <a href="https://github.com/hellojahid" target="_blank"><i
+                                                class="fab fa-github"></i></a>
+                                                
+                                        <a href="https://www.facebook.com/xyz22abc" target="_blank"><i class="fab fa-facebook"></i></a>
+                                        
+                                        <a href="https://www.youtube.com/@MachineLearningTalksTips" target="_blank"><i class="fab fa-youtube"></i></a>
+                                                
+                                        <a href="https://github.com/by-sabbir" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials area end -->
+        
     </div>
     <a href="#home" class="back_top"> <i class="fas fa-angle-up"></i> </a>
     <script src="https://kit.fontawesome.com/4cd2a78d9b.js" crossorigin="anonymous"></script>
@@ -1145,7 +1368,8 @@
     <script src="js/jquery.meanmenu.min.js"></script>
     <script src="js/jquery.smoothscroll.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/customer-contact.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script>
         var lazyLoadInstance = new LazyLoad({
             elements_selector: ".lazy"

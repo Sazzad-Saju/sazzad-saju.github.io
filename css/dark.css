@@ -893,7 +893,7 @@ input:focus{
     font-weight: 600;
 }
 .testi-description p:before {
-    content: "\f10d";
+    /* content: "\f10d"; */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     display: inline-block;
@@ -904,7 +904,7 @@ input:focus{
     font-size: 30px;
 }
 .testi-description p:after {
-    content: "\f10e";
+    /* content: "\f10e"; */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     display: inline-block;

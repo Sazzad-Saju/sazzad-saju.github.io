@@ -2,7 +2,8 @@
 
 document.getElementById('javascript_form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const subject = document.querySelector('input[name="subject"]').value;
+    const originalSubject = document.querySelector('input[name="subject"]').value;
+    const subject = "📩 New Anonymous Inquiry via Portfolio: " + originalSubject;
     let mail_body = document.getElementById('msg-body').value;
     
     const mail_to = "mahfuzul.mngmt@gmail.com";
