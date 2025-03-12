@@ -919,7 +919,7 @@ input:focus{
 }
 .testi-profile {
     margin-bottom: 15px;
-    width: 10%;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -941,7 +941,15 @@ input:focus{
     margin-bottom: 0;
 }
 
-
+.testi-description .hero-social-link .social-icon-img {
+    display: inline-block; 
+    vertical-align: middle;
+}
+.testi-description .hero-social-link .social-icon-img img{
+    height:20px; 
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
 
 /* 9. Subscriber */
 .subscriber-area{
@@ -1125,11 +1133,72 @@ input{
         font-weight: 600;
     }
 
+    /* support work */
+    .support-description p {
+        color: #fff;
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 21px;
+        padding: 0px 11%;
+        font-weight: 600;
+    }
+    .support-description p:before {
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 6%;
+        color: #fff;
+        font-size: 30px;
+    }
+    .support-description p:after {
+        content: "\f10e";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 6%;
+        color: #fff;
+        font-size: 30px;
+    }
+    .support-description {
+        position: relative;
+    }
+    
+    .buy-coffee:hover,
+    .buy-coffee:hover * {
+        color: #EDB429 !important;
+    }
 
+    .buy-coffee,
+    .buy-coffee * {
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        0%, 100% {
+            color: #EDB429;
+        }
+        50% {
+            color: #333; /* Replace with your default color if different */
+        }
+    }
+
+    .famous-quote{
+        color: #fff;
+    }
+    
+    .famous-quote .ptr{
+        cursor: pointer;
+    }
+    
 
     /* 12. Footer */
     .footer-area {
-        
+        background-color: #131419;
         padding: 70px 0px;
         
     }
@@ -1157,3 +1226,5 @@ input{
         font-size: 20px;
 
     }
+
+    

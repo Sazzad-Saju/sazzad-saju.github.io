@@ -10,11 +10,13 @@
     .main-menu ul li {
         margin: 0 9px;
     }
-    
+    .blog-box {
+        display: block;
+      }
 }
 
 /* MD Device :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 420px) and (max-width: 991px) {
    .header-btn {
         display: none;
     }
@@ -24,6 +26,23 @@
     .portfolio-category ul li {
         margin-bottom: 11px;
     }
+    .about-hero-img{
+        text-align: center;
+    }
+    
+    .about-hero-img img{
+        width: 70%;
+        height: auto;
+    }
+    .resume-head-title{
+        margin-top: -70px;
+    }
+    .container-resume{
+        margin-top: 50px;
+    }
+    .blog-box:nth-child(n+7) {
+        display: none;
+      }
 }
 
 
@@ -38,6 +57,17 @@
     .portfolio-category ul li {
         margin-bottom: 11px;
     }
+    
+    .desktop-only {
+        display: none;
+    }
+    /* .about-hero-img{
+        text-align: center;
+    }
+    
+    .about-hero-img img{
+        width: 70%;
+    } */
     
 }
 
@@ -56,6 +86,29 @@
     .hero-loading-content h1 {
         font-size: 40px;
     }
+    .resume-head-title{
+        margin-top: -95px;
+    }
+    .container-resume{
+        margin-top: 50px;
+    }
+    .blog-box:nth-child(n+5) {
+        display: none;
+    }
+    .testi-profile{
+        width: 40%;
+    }
+    
+    .testimonials-main-content{
+        margin-left: 20px;
+    }
+    .testi-description p {
+        font-size: 14px;
+    }
+    
+    .footer-area .social-link ul li {
+        margin-top: 22px;
+    }
 }
 
 /* SM Device :480px. */
@@ -72,4 +125,27 @@
     .hero-loading-content h1 {
         font-size: 30px;
     }
+    .container-resume{
+        margin-top: 50px;
+    }
+    .blog-box:nth-child(n+5) {
+        display: none;
+    }
+    .testi-profile{
+        width: 40%;
+    }
+    
+    .testimonials-main-content{
+        margin-left: 20px;
+    }
+    
+    .testi-description p {
+        font-size: 14px;
+    }
+    
+    .footer-area .social-link ul li {
+        margin-top: 22px;
+    }
 }
+
+  
