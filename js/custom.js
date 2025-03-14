@@ -146,5 +146,10 @@ document.getElementById('contact_form').addEventListener('submit', function(e) {
     document.getElementById("age").textContent = age;
     document.getElementById("experience").textContent = `${experience.years} years and ${experience.months} months`;
   });
-      
+
+  
+// footer copyright
+const currentYear = new Date().getFullYear();
+const footerText = document.getElementById("footerText");
+footerText.innerHTML = `${currentYear} © <a href="https://sazzad-saju.github.io">Sazzad Saju All Rights Reserved</a>.`;
     
