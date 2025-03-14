@@ -84,3 +84,55 @@ document.getElementById('contact_form').addEventListener('submit', function(e) {
             bqf.innerHTML = "Surah Ibrahim 14:7";
         }
     }
+    
+    // resume download notification
+    document.querySelectorAll('.download-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+            toastr.success("Resume downloaded! <br> For password Text me!", null, {
+                positionClass: "toast-bottom-right"
+            });
+        });
+    });
+    
+    // Calculate age based on birthdate
+  function calculateAge(birthDate) {
+    const now = new Date();
+    let age = now.getFullYear() - birthDate.getFullYear();
+    const m = now.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && now.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  }
+
+  // Calculate experience (years and months) from a start date
+  function calculateExperience(startDate) {
+    const now = new Date();
+    let years = now.getFullYear() - startDate.getFullYear();
+    let months = now.getMonth() - startDate.getMonth();
+
+    if (now.getDate() < startDate.getDate()) {
+      months--;
+    }
+
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+
+    return { years, months };
+  }
+
+  // Run calculations once the DOM is fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    const birthDate = new Date("1996-11-18");
+    const age = calculateAge(birthDate);
+
+    const expStartDate = new Date("2022-01-01");
+    const experience = calculateExperience(expStartDate);
+
+    document.getElementById("age").textContent = age;
+    document.getElementById("experience").textContent = `${experience.years} years and ${experience.months} months`;
+  });
+      
+    
