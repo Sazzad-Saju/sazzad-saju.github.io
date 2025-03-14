@@ -127,7 +127,19 @@ document.getElementById('contact_form').addEventListener('submit', function(e) {
   document.addEventListener("DOMContentLoaded", function() {
     const birthDate = new Date("1996-11-18");
     const age = calculateAge(birthDate);
-
+    const today = new Date()
+    const isBirthday = (today.getDate() === birthDate.getDate() && today.getMonth() === birthDate.getMonth());
+    const birthdayImg = document.getElementById("birthdayImg");
+    const birthdayText = document.getElementById("birthdayText");
+    const birthdayTextSpan = birthdayText.querySelector("span");
+    if (isBirthday) {
+        birthdayImg.style.display = 'block';
+        birthdayText.style.display = 'block';
+        birthdayTextSpan.textContent = `Thanks! Today I'm ${age} years old and You're my special guest, so don't hesitate to join the party! 🎉`;
+    } else {
+        birthdayImg.style.display = 'none';
+    }
+    
     const expStartDate = new Date("2022-01-01");
     const experience = calculateExperience(expStartDate);
 

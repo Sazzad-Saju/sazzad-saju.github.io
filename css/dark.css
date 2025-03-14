@@ -445,6 +445,14 @@ input:focus{
 	}
 }
 
+#birthdayImg {
+    height: 20rem;
+  }
+  
+#birthdayText{
+    display: none;
+}
+
 /* 4. About */
 .content {
     margin: 66px 0;
@@ -1224,7 +1232,6 @@ input{
         margin-top: 20px;
         color: #fff;
         font-size: 20px;
-
     }
 
     
