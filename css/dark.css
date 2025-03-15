@@ -678,6 +678,9 @@ input:focus{
 .mb-36{
     margin-bottom: 36px;
 }
+.mb-0{
+    margin-bottom: 0!important;
+}
 .custom-btn{
     background: transparent;
     box-shadow: #000000 5px 5px 15px, #4d4d4d -5px -5px 15px;
@@ -1121,13 +1124,13 @@ input{
     .back_top {
         text-align: center;
         position: fixed;
-        bottom: 15px;
+        bottom: 100px;
         height: 37px;
         width: 37px;
         background: rgb(0, 0, 0);
         z-index: 10000;
         border-radius: 3px;
-        right: 20px;
+        right: 30px;
         transition: all 0.5s;
         display: none;
         box-shadow:  3px 3px 10px #0f0f0f, 
