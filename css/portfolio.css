@@ -39,7 +39,7 @@ body {
 /* About me section */
 
 .container-about {
-    background-color: #00BDBD;
+    background-color: #0C7888;
 }
 
 .circle {
@@ -74,23 +74,32 @@ body {
 }
 
 .bg-col-2 {
-    background-color: #46d1d1;
+    background-color: #0a6573;
     color: white;
 }
 
 .bg-col-2:hover {
-    background-color: #7ae7e7;
-    color: black;
+    background-color: #08505b;
+    color: white;
+    /* color: black; */
 }
 
 .about-cards {
-    background-color: #7ae7e7;
+    background-color: #0a6573;
+    color: white;
+}
+.about-cards a{
+    color: white;
+    text-decoration: none;
 }
 
 .about-cards:hover {
-    background-color: #c0f8f8;
+    background-color: #08505b;
 }
 
+.no-border{
+    border: none;
+}
 
 /* highlight section */
 
@@ -123,6 +132,26 @@ body {
     color: white;
     border: 3px solid white;
     outline: 2px solid #fb857f;
+}
+
+.table th {
+    background-color: #0a6573;
+    color: white;
+}
+
+.table thead tr {
+    border: 1px solid #0c8497;;
+}
+
+.table td {
+    background-color: #0a6573;
+    color: white;
+}
+
+.table tbody tr:hover td,
+.table thead tr:hover th {
+    background-color: #08505b !important;
+    transition: 0.3s ease-in-out;
 }
 
 
