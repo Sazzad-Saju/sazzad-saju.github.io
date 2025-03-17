@@ -30,6 +30,31 @@ function changeProj() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const projects = document.querySelectorAll('.project-item');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    
+    let visibleCount = 0;
+    const loadCount = 6;
+    
+    projects.forEach(project => {
+        project.style.display = 'none';
+    });
+    
+    function showNextProjects() {
+        for (let i = visibleCount; i < visibleCount + loadCount && i < projects.length; i++) {
+            projects[i].style.display = 'block';
+          }
+          visibleCount += loadCount;
+          
+        if (visibleCount >= projects.length) {
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+    
+    loadMoreBtn.addEventListener('click', showNextProjects);
+});
+
 // Myblog_sec: more blog
 function change() {
     var fh = document.getElementById("OpenBlog");
