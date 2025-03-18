@@ -32,6 +32,8 @@ function changeProj() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const projects = document.querySelectorAll('.project-item');
+    const projectCount = projects.length + 3;
+    document.getElementById('proj_numbers').textContent = '('+projectCount+')';
     const loadMoreBtn = document.getElementById('loadMoreBtn');
     
     let visibleCount = 0;
