@@ -30,6 +30,58 @@ function changeProj() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function(){
+    const blogs = document.querySelectorAll('.blog-item');
+    const blogCount = blogs.length + 5;
+    document.getElementById('blog_numbers').textContent = '('+blogCount+')';
+    const loadMoreBtn = document.getElementById('loadMoreBlog');
+    
+    let visibleCount = 0;
+    const loadCount = 6;
+    
+    blogs.forEach(cert => {
+        cert.setAttribute("style", "display: none !important;");
+    });
+    
+    function showNextBlogs(){
+        for (let i = visibleCount; i < visibleCount + loadCount && i < blogs.length; i++) {
+            blogs[i].style.display = 'block';
+          }
+          visibleCount += loadCount;
+          
+        if (visibleCount >= blogs.length) {
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+    loadMoreBtn.addEventListener('click', showNextBlogs);
+})
+
+document.addEventListener("DOMContentLoaded", function(){
+    const certificates = document.querySelectorAll('.certificate-item');
+    const certificateCount = certificates.length + 5;
+    document.getElementById('cert_numbers').textContent = '('+certificateCount+')';
+    const loadMoreBtn = document.getElementById('loadMoreCert');
+    
+    let visibleCount = 0;
+    const loadCount = 3;
+    
+    certificates.forEach(cert => {
+        cert.setAttribute("style", "display: none !important;");
+    });
+    
+    function showNextCertificates(){
+        for (let i = visibleCount; i < visibleCount + loadCount && i < certificates.length; i++) {
+            certificates[i].style.display = 'block';
+          }
+          visibleCount += loadCount;
+          
+        if (visibleCount >= certificates.length) {
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+    loadMoreBtn.addEventListener('click', showNextCertificates);
+})
+
 document.addEventListener("DOMContentLoaded", function() {
     const projects = document.querySelectorAll('.project-item');
     const projectCount = projects.length + 3;
