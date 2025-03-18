@@ -32,7 +32,7 @@ function changeProj() {
 
 document.addEventListener("DOMContentLoaded", function(){
     const blogs = document.querySelectorAll('.blog-item');
-    const blogCount = blogs.length + 5;
+    const blogCount = blogs.length + 3;
     document.getElementById('blog_numbers').textContent = '('+blogCount+')';
     const loadMoreBtn = document.getElementById('loadMoreBlog');
     
