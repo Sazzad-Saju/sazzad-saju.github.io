@@ -161,12 +161,12 @@
     padding: 30px 0px 50px;
   }
   
+  
   .social a {
     font-family: 'Montserrat', monospace;
     display: inline-block;
     justify-content: center;
-    width: 170px;
-    height: 85px;
+    
     border-radius: 0px;
     background: #262f38;
     position: relative;
@@ -180,6 +180,17 @@
     transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
     text-decoration: none;
   }
+  
+  .social .acc_port_social{
+    width: 255px;
+    height: 100px;
+  }
+  
+  .social .contact_social{
+    width: 170px;
+    height: 85px;
+  }
+  
   
   .social a span {
     position: absolute;
