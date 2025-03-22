@@ -1,0 +1,15 @@
+{
+    "name": "js-minifier",
+    "version": "1.0.0",
+    "description": "A simple script to combine and minify JS files using UglifyJS",
+    "main": "uglify.js",
+    "scripts": {
+      "minify": "node uglify.js"
+    },
+    "author": "Sazzad Saju",
+    "license": "MIT",
+    "dependencies": {
+      "uglify-js": "^3.17.4"
+    }
+  }
+  
